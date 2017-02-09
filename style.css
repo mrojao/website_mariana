@@ -1,0 +1,424 @@
+@import url('https://fonts.googleapis.com/css?family=Rubik:300,300i,400,400i,500,500i,700,700i,900,900i');
+@import url('https://fonts.googleapis.com/css?family=Lato:300i,400,400i,700,700i,900,900i');
+
+html, body{
+    margin: 0;
+    padding:0;
+    font-family: 'Rubik';
+}
+
+body{
+background-color: #232323;
+
+
+}
+
+
+#homepage{
+    margin: 2%;
+    color: white;
+}
+
+#down_side{
+    float: left;
+    width:50%;
+    margin-top: 7%;
+    margin-left:3%;
+}
+
+#menu_login{
+    float: right;
+    width:47%;
+}
+
+#down_side h1{
+	font-size: 2.6em;
+    text-transform: uppercase;
+    color: white;
+    margin: 0;
+    padding-bottom: 30px;
+}
+
+#homepage_form{
+    width: 80%;
+}
+
+.textarea{
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.16);
+    outline: none;
+    border: none;
+    resize: none;
+    height: 117px;
+    font-family: 'Lato';
+    font-size: 17px;
+    font-weight: lighter;
+    font-style: italic;
+    color: #ffffff;
+    padding: 13px;
+}
+
+.botao_submit{
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.20);
+    color: #ffffff;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 14px 20px;
+    border: none;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+
+/* login */
+
+.botao_login{
+    background: url(fotos/login2.png) no-repeat;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background-size: 100%;
+    width: 7%;
+    height: 20%;
+    float: right;
+}
+
+#popup {
+    display: none; 
+    position: fixed;
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+    padding-top: 60px;
+}
+
+.popup_form {
+    background-color: #fefefe;
+    margin: 0% auto 5% auto; 
+    border: 1px solid #888;
+    width: 40%; 
+}
+
+input[type=username], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    background-color: rgba(128, 128, 128, 0.28);
+    color: grey;
+    border:none;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+}
+
+img.avatar {
+    width: 30%;
+    border-radius: 50%;
+}
+
+#container {
+    padding: 10px;
+}
+
+#container h2{
+    font-size: 13px;
+    color: red;
+    font-weight: lighter;
+}
+
+#btn_login{
+    width: 100%;
+    background-color: rgba(150, 150, 150, 0.93);
+    color: rgba(36, 36, 36, 0.54);
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 900;
+    padding: 14px 20px;
+    border: none;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+.cancelbtn {
+    width: auto;
+    border: none;
+    outline: none;
+    padding: 10px 18px;
+    margin-top: 15px;
+    background-color: #f44336;
+    color: white;
+}
+
+.close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+}
+    
+@keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+
+
+.active{
+    border-bottom: rgba(255, 255, 255, 0.38) solid 1px;
+    border-bottom-width: 9px;
+}
+
+#menu{
+    position: fixed;
+    width: 100%;
+    background-color: rgb(236, 236, 236);
+    height: 43px;
+    /* padding: 4; */
+    border-top-style: solid;
+    border-top-color: rgba(0, 0, 0, 0.45);
+    border-top-width: thick;
+    z-index: 3;
+}
+
+ul {
+    position: absolute;
+    list-style-type: none;
+    padding: 0;
+    overflow: hidden;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: inline-block;
+    /* color: #891111; */
+    color: grey;
+    text-align: left;
+    padding-left: 31px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+/* mensagem trump */
+
+#mensagemTrump{
+    position: relative;
+}
+
+#mensagemTrump img{
+    width: 100%;
+    text-align: center;
+}
+
+
+/* mensagens PUBLICAS */
+
+#listaMensagens{
+    margin-top: 7%;
+    margin-left: 4%;
+}
+
+#listaMensagens, #listaMensagensAprovadas{
+    width: 90%;
+    text-align: left;
+    color: white;
+    text-transform: none;
+    font-size: 1.2em;
+}
+
+#listaMensagens li, #li_mensagem li{
+    float: left;
+    background-color: rgba(255, 255, 255, 0.09);
+    padding: 10px;
+    font-size: 0.85em;
+    color: #c5c5c5;
+}
+
+#listaMensagens a, #listaMensagensAprovadas a{    
+    text-decoration: none;
+    color: white;
+}
+
+/* gestao de mensagens */
+
+#gestaoMensagens{
+    position: absolute;
+    margin: 5%;
+    width: 90%;
+}
+
+#gestaoMensagens h3{
+    text-transform: uppercase;
+    color: white;
+}
+
+#listaMensagensAprovadas{
+    position: relative;
+}
+
+#li_botoes{
+   height: 20px;
+}
+
+
+#form_aceitar{
+}
+
+#form_rejeitar{
+}
+
+
+
+#botao_rejeitar, #botao_aceitar{
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    color: #d40808;
+    outline: none;
+}
+
+#botao_aceitar{    
+    color: #e7e7e7;
+    cursor: pointer;
+}
+
+#botao_rejeitar{
+    color: #e2a5a5;
+    cursor: pointer;
+}
+
+
+/* responsive */
+
+@media (max-width: 900px) {
+    
+    body{
+        /*background-color: #252525; */
+    }
+
+    .botao_login{
+    width: 11%;
+    }
+
+    #homepage h1{
+        font-size: 2.1em;
+    }
+
+    #container h2{
+    font-size: 0.8em;
+    }
+}
+
+@media (max-width: 767px) {
+
+    body {
+        /*background-color: #252525; */
+    }     
+
+    .botao_login{
+    width: 14%;
+    }
+
+    #container h2{
+    font-size: 0.8em;
+    }
+    
+    #down_side{
+        width: 80%;
+        margin-top: 0%;
+    }
+
+    #homepage h1{
+        font-size: 2em;
+    }
+
+    #div_title{
+        width: 70%;
+    }
+
+    #div_form{
+        width: 100%;
+        margin-top: 40%;
+        margin-bottom: 20%;
+    }
+
+    #homepage_form{
+        width: 100%;
+    }
+
+    .cancelbtn {
+       width: 100%;
+    }
+
+    .popup_form{
+        width:70%;
+    }
+}
+
+@media (max-width: 480px) {
+
+    body {
+        /*background-color: #252525; */
+    }
+
+    .botao_login{
+    width: 25%;
+    }
+
+
+    #container h2{
+    font-size: 0.8em;
+    }
+    
+
+    #div_title{
+        width: 70%;
+        margin-top: 0%;
+    }
+
+    #div_form{
+        width: 100%;
+        margin-top: 10%;
+        margin-bottom: 20%;
+    }
+
+    .popup_form{
+        width:100%;
+    }
+
+
+}
