@@ -9,10 +9,7 @@ html, body{
 
 body{
 background-color: #232323;
-
-
 }
-
 
 #homepage{
     margin: 2%;
@@ -243,6 +240,7 @@ li a {
 #mensagemTrump img{
     width: 100%;
     text-align: center;
+    margin-top: 45px;
 }
 
 
