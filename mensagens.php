@@ -25,6 +25,7 @@ while ($row = $result->fetch_assoc()) {
     $tabelaPorAprovar = $tabelaPorAprovar . "<input id='botao_rejeitar' type='submit' name='rejeitar' value='Rejeitar'></form></li>";
 
 }
+
 $tabelaPorAprovar = $tabelaPorAprovar . "</ul>";
 
 
@@ -51,7 +52,7 @@ while ($row = $resultRejeitadas->fetch_assoc()) {
 
 	$tabelaRejeitadas = $tabelaRejeitadas . "<li id='li_botoes'><form action='' id='form_aceitar' method='POST' onsubmit='return confirm(\"Pretende aprovar esta mensagem?\")'>";
     $tabelaRejeitadas = $tabelaRejeitadas . "<input type='text' value='".$row['idMensagem'] ."' name='mensagemAprovada' style='display:none'>";
-    $tabelaRejeitadas = $tabelaRejeitadas . "<input id='botao_aceitar' type='submit' name='aprovar' value='Aprovar'></form><br>";
+    $tabelaRejeitadas = $tabelaRejeitadas . "<input id='botao_aceitar' type='submit' name='aprovar' value='Aprovar'></form></li><br>";
 }
 $tabelaRejeitadas = $tabelaRejeitadas . "</ul>";
 
