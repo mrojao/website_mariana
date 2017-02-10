@@ -204,7 +204,7 @@ img.avatar {
     border-top-style: solid;
     border-top-color: rgba(0, 0, 0, 0.45);
     border-top-width: thick;
-    z-index: 3;
+    z-index: 5;
 }
 
 ul {
@@ -232,6 +232,22 @@ li a {
 
 
 /* mensagem trump */
+
+#facebook{
+    position: absolute;
+    z-index: 3;
+    padding-top: 80px;
+    padding-left: 30px;
+}
+
+#facebook img{
+    width: 10%;
+    opacity: 0.5;
+}
+
+#facebook img:hover{
+    opacity: 1;
+}
 
 #mensagemTrump{
     position: relative;

@@ -89,12 +89,19 @@
   imagejpeg($jpg_image, 'fotos\newimage2.jpg');
 
   imagedestroy($jpg_image);
-
-
-
 ?>
 
+<div id="facebook">
+  <?php
+  $url = "https://sensitive-passages.000webhostapp.com/mensagemtrump.php?id=" . $id;
+  echo "<a href='https://www.facebook.com/sharer/sharer.php?u=". $url ."' target='_blank'> <img src='fotos/facebook.gif'> </a>"; 
+  ?>
+</div>
 
 <div id="mensagemTrump">
 <img src="fotos\newimage2.jpg">
 </div>
+
+
+
+
